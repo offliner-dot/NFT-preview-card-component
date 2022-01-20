@@ -27,7 +27,6 @@ body {
 
 .page {
   height: 100%;
-  max-width: 1440px;
   background: #0d192b;
   margin: 0 auto;
   display: flex;
@@ -68,6 +67,7 @@ body {
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
+  border-radius: 10px;
 }
 
 .card__img:hover .card__active {
@@ -78,14 +78,15 @@ body {
 
 .card__title {
   font-size: 1.2rem;
-  margin-top: 18px;
-  font-weight: 600;
-  color: white;
+  margin-top: 25px;
 }
-
-.card__title:hover {
+.card__title a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.card__title a:hover {
   color: #00fff7;
-  cursor: pointer;
 }
 
 .card__text {
@@ -139,13 +140,13 @@ hr {
   border: 1px solid white;
   border-radius: 50%;
 }
-.card__author span {
+.card__author a {
   color: white;
   margin-left: 5px;
+  text-decoration: none;
 }
-.card__author span:hover {
+.card__author a:hover {
   color: #00fff7;
-  cursor: pointer;
 }
 
 @media (max-width: 375px) {
@@ -159,11 +160,15 @@ hr {
   }
 
   .card__info {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   hr {
     margin: 13px 0 18px;
+  }
+
+  .card__author a {
+    margin-left: 0;
   }
 }
 
