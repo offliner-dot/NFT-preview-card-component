@@ -28,7 +28,6 @@ body {
 .page {
   height: 100%;
   background: #0d192b;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
