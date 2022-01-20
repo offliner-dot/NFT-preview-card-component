@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  width: 100vw;
+  color: #8bacda;
+}
+
+body {
+  height: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.page {
+  height: 100%;
+  max-width: 1440px;
+  background: #0d192b;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  max-width: 350px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 20px;
+  background: #14253d;
+}
+
+.card__img {
+  width: 100%;
+  background-size: contain;
+  position: relative;
+}
+.card__img img {
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+.card__img .card__active {
+  position: absolute;
+  background: rgba(0, 255, 247, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.card__img:hover .card__active {
+  display: flex;
+  cursor: pointer;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  margin-top: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.card__title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card__text {
+  color: #8bacda;
+  margin-top: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.card__info .card__eth {
+  display: flex;
+  align-items: center;
+  color: #00fff7;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.card__info .card__eth img {
+  margin-right: 5px;
+}
+.card__info .card__time {
+  display: flex;
+  align-items: center;
+  color: #8bacda;
+  font-size: 0.9rem;
+}
+.card__info .card__time img {
+  margin-right: 7px;
+}
+
+hr {
+  margin: 25px 0 15px;
+  background: #2f415b;
+  border: none;
+  height: 1px;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.card__author img {
+  width: 32px;
+  margin-right: 17px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.card__author span {
+  color: white;
+  margin-left: 5px;
+}
+.card__author span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  .card {
+    max-width: 330px;
+  }
+
+  .card__text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .card__info {
+    margin-top: 20px;
+  }
+
+  hr {
+    margin: 13px 0 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
